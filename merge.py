@@ -10,6 +10,8 @@ class Solution:
     # leetcode 56 Merge Intervals 
     # scarlett Chen
     # 5/23/2015 sat 6:35 pm
+    # 思路很简单，写法可借鉴。先排序：java可以用collections.sort( new comparator()); python 可以用(key = lambda x:...)
+    # 比较两者的start, 前者的end和后者的start,两者的end .结果可得。
     def merge(self, intervals):
         if len(intervals)<=1:
             return intervals
