@@ -13,6 +13,7 @@ class Solution:
     # Scarlett Chen
     # leetcode 98 Validate Binary Search Tree
     # 5/24/2015
+    # 其他方法，走一遍中序遍历，存入数组；确保左边总是比右边小
     def isValidBST(self, root):
         return self.control(root, -sys.maxint, sys.maxint)
       
