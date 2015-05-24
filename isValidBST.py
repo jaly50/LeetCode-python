@@ -10,6 +10,9 @@ class Solution:
     # @return {boolean}
     # 要注意 Node和int的区别，参数要写对。
     # 用了min和max value,用了除了把握儿子的大小； 同时还确保左儿子的右儿子要小于root
+    # Scarlett Chen
+    # leetcode 98 Validate Binary Search Tree
+    # 5/24/2015
     def isValidBST(self, root):
         return self.control(root, -sys.maxint, sys.maxint)
       
