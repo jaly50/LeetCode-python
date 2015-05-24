@@ -4,6 +4,7 @@ class Solution:
     # scarlett Chen
     # LeetCode sort Colors
     # in place one pass
+    # 这个方法更漂亮 ： https://leetcode.com/discuss/17000/share-my-one-pass-constant-space-10-line-solution 左右双指针，交换
     def sortColors(self, nums):
         i=j=k=0
         for num in nums:
