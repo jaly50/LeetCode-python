@@ -27,4 +27,18 @@ class Solution:
                     
             ans = newans
         return ans
+    
+    # 看了看，还是这种方法妙！简洁！漂亮！
+    def permuteUnique(self, nums):
+        nums.sort()
+        if len(nums)<=1:
+            return [nums]
+        perm=[]
+        for idx,ele in enumerate(nums):
+            if idx>0 and nums[idx-1]==ele:
+                continue
+            for rest in self.permuteUnique(nums[:idx]+nums[idx+1:]):
+                if rest:
+                    perm.append([ele]+rest)
+        return perm
         
