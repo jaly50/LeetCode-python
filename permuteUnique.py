@@ -5,6 +5,7 @@ class Solution:
     # 5/27/2015 Wed 9:48 am
     # 遇到一样的，后面就不要理了。
     # 每次加一个元素；试图把这个元素放在每一个位置上
+    # 47Permutations II
     def permuteUnique(self, nums):
         nums.sort()
         ans=[]
