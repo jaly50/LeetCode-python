@@ -7,6 +7,7 @@ class Solution:
     # Scarlett Chen
     # 5/26/2015 tue 10:14 pm
     # 46 Permutations
+    # 反复循环元素也是一个iterative的好方法： https://leetcode.com/discuss/19510/my-ac-simple-iterative-java-solution
     def permute(self, nums):
         if len(nums)<=1:
             return [nums]
